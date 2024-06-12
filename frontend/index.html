@@ -5,33 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot - TEST 1</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
-    <div class="time"><span>10:42</span></div>
-
-    <div class="message sol">
-        <div class="resim"></div>
-        <div class="messageText">
-            thats ok
-        </div>
-    </div>
-    <div class="message sag mtLine">
-        <div class="messageText">
-            ok than
-        </div>
-        <div class="resim"
-            style="background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/t1/1393075_669686723071617_1541630705_n.jpg');">
-        </div>
-    </div>
-    <div class="message sag mtLine">
-        <div class="messageText">
-            TESTE - Mensagem 2 lorem tetstetetetetete
-            TESTE - Mensagem 2 lorem tetstetetetetete
-            TESTE - Mensagem 2 lorem tetstetetetetete
-        </div>
-        <div class="resim"></div>
-    </div>
+    <div class="chat-container">
+        <div id="chat-window" class="chat-window"></div>
+        <form id="chat-form" class="chat-form">
+          <input type="text" id="message-input" class="message-input" placeholder="Type your message..." required>
+          <button type="submit" class="send-button">Send</button>
+        </form>
+      </div>
+      <script src="./dist/script.js"></script>
 </body>
 
 </html>
